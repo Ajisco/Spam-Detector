@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Spam Predictor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static', filename='assets/css/main.css')}}" />
+		<link  rel="icon" href="{{url_for('static', filename='images/spam.png')}}" />
+	</head>
+	<body class="is-preload" style="font-family: sans-serif; background-color: lightblue;">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<div>
+						<center><h2 style="color: white;background-color: black;">SPAM DETECTOR</h2></center>
+
+					
+			
+
+			<!-- Banner -->
+				<section class="wrapper style1" id="banner">
+					<header>
+						
+					</header>
+				</section>
+
+			<!-- Highlights -->
+		
+					<hr>
+				<!-- Gigantic Heading -->
+				<section class="wrapper style2" id="predict">
+					<div class="container">
+						<header class="major">
+							<h2 style="background-color: black; color: white;">Paste or input text to Predeict! </h2>
+
+							
+							
+						</header>
+					</div>
+					<section id="main" class="container medium">
+					
+					<div style="background-color: lightblue;" class="box">
+						<form style="position: relative; text-align: center;" method="POST" action="{{url_for('index')}}">
+							<div class="col-12">
+											<textarea name="text" id="text" placeholder=" Paste/ input your text" rows="5"></textarea>
+										</div>
+								
+								
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" value="Predict" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+
+				</section>
+				
+
+
+			<!-- Posts -->
+				
+			<!-- Footer -->
+				<div style="background-color: #d3d4e0;" id="footer">
+					
+
+					
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy;   All rights reserved</li>
+							</ul>
+						</div>
+
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static', filename='assets/js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{url_for('static', filename='assets/js/main.js')}}"></script>
+
+		</body>
+</html>
